@@ -8,15 +8,28 @@
 		<groupId>com.appleframework</groupId>
 		<version>0.1.4.RELEASE</version>
 	</parent>
-	<artifactId>apple-exception</artifactId>
-	<name>apple-exception</name>
+	<artifactId>apple-context</artifactId>
+	<name>apple-context</name>
 	<url>http://mvnrepo.appleframework.com</url>
 
-	
 	<dependencies>
+		
 		<dependency>
-			<groupId>log4j</groupId>
-			<artifactId>log4j</artifactId>
-		</dependency>		
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>test</scope>
+		</dependency>
+		
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>apple-exception</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+		</dependency>
+		
 	</dependencies>
 </project>
